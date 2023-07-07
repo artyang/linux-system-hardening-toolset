@@ -1,5 +1,20 @@
 #!/bin/bash
-
+# This script performs the following hardening actions:
+#
+# Updates the system by running apt update and apt upgrade.
+# Disables unused services such as telnet, ftp, rsh, rlogin, and rexec.
+# Configures the UFW firewall to deny incoming traffic by default, allows SSH, and enables the firewall.
+# Sets strong password policies by modifying /etc/ssh/sshd_config to disable password authentication, empty passwords, and root login.
+# Configures user accounts by modifying the password policy file and setting the maximum password age for root and selected users.
+# Enables automatic security updates using the unattended-upgrades package.
+# Disables root login via SSH by modifying /etc/ssh/sshd_config and restarting the SSH service.
+# Hardens sysctl settings by adding various entries to /etc/sysctl.conf.
+# Configures file permissions for sensitive files such as /etc/passwd, /etc/shadow, /etc/group, and /boot/grub/grub.cfg.
+# To use the script, save it to a file (e.g., system-hardening.sh), make it executable (chmod +x system-hardening.sh), 
+# and run it with root privileges:
+#
+# Please note that system hardening is a complex task, and this script covers only some basic hardening actions. It's important to thoroughly 
+# understand the implications of each action and tailor them to your specific system and security requirements.
 # Check if script is run as root
 if [[ $EUID -ne 0 ]]; then
    echo "This script must be run as root"
