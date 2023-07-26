@@ -6,5 +6,7 @@
 # Goals: built in tools or distribution defaults of a linux system.  
 # -Should not contain specialized libraries or packages outside of the default installation
 # -If a utility has multiple implmentations across platforms - the utility should check for which command is installed.
+#
+# Some scripts may require some mofification (i.e. usernames or file input).  Always advisable that you read the code before you execute.
 # 
 # AlphaKiloNine
