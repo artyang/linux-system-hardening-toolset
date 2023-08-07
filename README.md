@@ -1,6 +1,7 @@
 # linux-system-hardening-toolset
 # This is a set of useful scripts in Bash and Python which are used for security hardening of a linux distribution.
-# This will expand into forensics and memory utilities.
+# This will expand into forensics and memory utilities.   This was rapidly built with the assistance of generative AI as an experiment
+# on the usefulness of AI assited programming.
 # This is distributed free and opensource using the MIT License.
 # 
 # Goals: built in tools or distribution defaults of a linux system.  
