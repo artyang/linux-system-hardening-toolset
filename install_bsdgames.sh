@@ -3,6 +3,7 @@
 # Function to install bsdgames
 install_bsdgames() {
     echo "Installing bsdgames..."
+    echo "Why? Because all work and no play..."
     sudo apt-get update
     sudo apt-get install -y bsdgames
 
