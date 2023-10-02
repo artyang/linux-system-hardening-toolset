@@ -2,10 +2,11 @@
 # https://www.time.gov/
 # Function to synchronize time with the U.S. Navy atomic clock
 sync_with_navy_atomic_clock() {
-    navy_atomic_server="time.nist.gov" # U.S. Navy atomic clock server
-    #   navy_atomic_server="tick.usno.navy.mil" # U.S. Navy atomic clock server
+    #   navy_atomic_server="time.nist.gov" #  NIST Time Server
+    navy_atomic_server="tick.usno.navy.mil" # U.S. Navy atomic clock server
     #   navy_atomic_server="tock.usno.navy.mil" # U.S. Navy atomic clock server
     #   navy_atomic_server="ntp2.usno.navy.mil" # U.S. Navy atomic clock server
+    #   navy_atomic_server="ntp1.usno.navy.mil" # U.S. Navy atomic clock server
       
 
     echo "Synchronizing time with the U.S. Navy atomic clock..."
