@@ -1,4 +1,5 @@
-# run from bash pip install requests
+# install prerequisites bash "pip install requests"
+# run as "python whatsmypublicip.py"
 # obtain your public IP address by making an HTTP request to a service that returns your IP address
 
 import requests
